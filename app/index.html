@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="gate-pass" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GATE PASS</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="/bower_components/html5-boilerplate/dist/css/main.css">
+  <!-- Material Design fonts -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="/bower_components/components-font-awesome/css/font-awesome.min.css">
+  <link rel='stylesheet' href='/bower_components/textAngular/dist/textAngular.css'>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bootstrap Material Design -->
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">  
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap-material-design/dist/css/ripples.min.css"> 
+  <!-- Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="/css/core.css">
+
+  <script src="/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <base href="/">
+  <base href="https://gatepass-be.herokuapp.com/api/" name="api">
+</head>
+<body>
+  <ui-view></ui-view>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <!-- <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+   <!-- <script src="/bower_components/bootstrap-material-design/js/bootstrapMaterialDesign.js"></script> -->
+   <script src="/bower_components/bootstrap-material-design/dist/js/material.js"></script>
+
+  <script src="/bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script> 
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="/bower_components/chart.js/dist/Chart.min.js"></script>
+  <script src='/bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
+  <script src='/bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
+  <script src='/bower_components/textAngular/dist/textAngular.min.js'></script>
+  <script src="/bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+  <script>
+    $.material.init();
+  </script>
+  <script src="/app.js"></script>
+  <script src="/app.config.js"></script>
+  <script src="/components/prototypes/date.prototype.js"></script>
+  <script src="/components/prototypes/number.prototype.js"></script>
+  <script src="/components/factories/household.factory.js"></script>
+  <script src="/components/factories/community.factory.js"></script>
+  <script src="/components/factories/alert.factory.js"></script>
+  <script src="/components/factories/user.factory.js"></script>
+  <script src="/components/directives/phone-field.dir.js"></script>
+  <script src="/components/directives/add-household-form.dir.js"></script>
+  <script src="/components/directives/batch-upload.dir.js"></script>
+  <script src="/components/household/householdController.js"></script>
+  <script src="/components/household/addHouseholdController.js"></script>
+  <script src="/components/register/registerController.js"></script>
+  <script src="/components/login/loginController.js"></script>
+  <script src="/components/complaint/complaintController.js"></script>
+  <script src="/components/report/reportController.js"></script>
+  <script src="/components/addEstate/addEstateController.js"></script>
+  <script src="/components/guest/guestController.js"></script>
+
+  <script src="/components/login/loginService.js"></script>
+
+
+</body>
+</html>
